@@ -20,7 +20,6 @@ public class UserController {
     public String hello() {
         log.info("hello!");
         List<Member> members = userRepository.findAll();
-        System.out.println(members.size());
         return "hello " + members.get(0).getName();
     }
 
